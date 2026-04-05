@@ -25,4 +25,14 @@ public class ReverseInteger {
         }
         return rev;
     }
+    public static void main(String[] args) {
+        ReverseInteger solution = new ReverseInteger();
+        int x1 = 123;
+        int x2 = -123;
+        int x3 = 120;
+
+        System.out.println("Reversed " + x1 + ": " + solution.reverse(x1)); // Output: 321
+        System.out.println("Reversed " + x2 + ": " + solution.reverse(x2)); // Output: -321
+        System.out.println("Reversed " + x3 + ": " + solution.reverse(x3)); // Output: 21
+    }
 }
