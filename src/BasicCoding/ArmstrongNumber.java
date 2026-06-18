@@ -28,7 +28,7 @@ public class ArmstrongNumber {
         temp = n;
         while (temp > 0) {
             int lastDigit = temp % 10;
-            sum += Math.pow(lastDigit, digits);
+            sum += (int) Math.pow(lastDigit, digits);
             temp = temp / 10;
         }
 
