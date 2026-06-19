@@ -100,6 +100,7 @@ public class ContiguousArray {
         }
         return maxLen;
     }
+    //logic: The idea is to use a HashMap to store the first occurrence of each cumulative sum. We iterate through the array, updating the cumulative sum by adding 1 for each 1 and subtracting 1 for each 0. If we encounter a cumulative sum that we've seen before, it means that the subarray between the previous index and the current index has an equal number of 0's and 1's. We calculate the length of this subarray and update the maximum length found so far.
     public int findMaxLength(int[] nums) {
         int n = nums.length;
         for(int i=0; i<n; i++) {
