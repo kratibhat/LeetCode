@@ -1,5 +1,9 @@
 package leetcode.STRING.EASY;
-
+//rite a code to describe this as follows:
+// Rules:Find the first vowel (a, e, i, o, u).Move all consonants before that
+// vowel to the end of the word.Add "ay" to the end.Step-by-step
+// Example for "cheese":Word: cheeseFirst vowel: e (at 0-indexed position 2, or 1-based position 3)
+// Consonants before it: ch Remaining part starting from the first vowel: eeseMove consonants to the end: eesechAdd "ay": eesechayResult: "cheese" $\rightarrow$ "eesechay"
 public class FirstUniqueCharacterinaString {
     public int firstUniqChar(String s) {
         int[] charCount = new int[26];
