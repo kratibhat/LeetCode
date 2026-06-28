@@ -1,4 +1,4 @@
-package leetcode.STRING.EASY;
+package leetcode.STRING.EASY.striversheet;
 
 import java.util.Arrays;
 

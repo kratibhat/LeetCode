@@ -1,4 +1,4 @@
-package leetcode.STRING.EASY;
+package leetcode.STRING.EASY.striversheet;
 //Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 //
 //
