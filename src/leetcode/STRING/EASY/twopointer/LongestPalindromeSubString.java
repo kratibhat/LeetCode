@@ -18,25 +18,38 @@ package leetcode.STRING.EASY.twopointer;
 //Input: s = "cbbd"
 //Output: "bb
 public class LongestPalindromeSubString {
+    private int start = 0;
+    private int maxLen = 1;
+
     public String longestPalindrome(String s) {
-        if (s == null || s.length() < 1) return "";
-        int start = 0, end = 0;
-        String result = "";
-        for (int i = 0; i < s.length(); i++) {
-            if (expandAroundCenter(s, i, i).length() > result.length()) {
-                result = expandAroundCenter(s, i, i);
-            }
+        if (s == null || s.length() < 2) {
+            return s;
         }
-        return result;
+
+        for (int i = 0; i < s.length(); i++) {
+            // Odd length palindrome
+            expand(s, i, i);
+
+            // Even length palindrome
+            expand(s, i, i + 1);
+        }
+
+        return s.substring(start, start + maxLen);
     }
 
-        private String expandAroundCenter (String s,int left, int right){
-            while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
-                left--;
-                right++;
+    private void expand(String s, int left, int right) {
+        while (left >= 0 && right < s.length() &&
+                s.charAt(left) == s.charAt(right)) {
+
+            if (right - left + 1 > maxLen) {
+                maxLen = right - left + 1;
+                start = left;
             }
-            return s.substring(left + 1, right); // Length of the palindrome
+
+            left--;
+            right++;
         }
+    }
         public static void main(String[] args) {
             LongestPalindromeSubString lp = new LongestPalindromeSubString();
             String input = "bababab";

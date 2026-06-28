@@ -1,4 +1,4 @@
-package leetcode.STRING.EASY;
+package leetcode.STRING.EASY.striversheet;
 //Given a string s, sort it in decreasing order based on the frequency of the characters. The frequency of a character is the number of times it appears in the string.
 //
 //Return the sorted string. If there are multiple answers, return any of them.
@@ -51,9 +51,8 @@ public class SortCharectersByFrequency {
         StringBuilder result = new StringBuilder();
         for (int i = buckets.length - 1; i >= 0; i--) {
             for (char c : buckets[i].toString().toCharArray()) {
-                for (int j = 0; j < i; j++) { //indicates frequency
-                    result.append(c);
-                }
+                //indicates frequency
+                result.append(String.valueOf(c).repeat(i));
             }
         }
 

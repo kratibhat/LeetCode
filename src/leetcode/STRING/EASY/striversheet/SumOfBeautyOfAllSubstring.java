@@ -1,4 +1,4 @@
-package leetcode.STRING.EASY;
+package leetcode.STRING.EASY.striversheet;
 //The beauty of a string is the difference in frequencies between the most frequent and least frequent characters.
 //
 //For example, the beauty of "abaacc" is 3 - 1 = 2.
