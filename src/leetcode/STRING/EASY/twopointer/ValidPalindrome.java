@@ -1,4 +1,4 @@
-package leetcode.STRING.EASY;
+package leetcode.STRING.EASY.twopointer;
 
 public class ValidPalindrome {
     public boolean isPalindrome(String s) {

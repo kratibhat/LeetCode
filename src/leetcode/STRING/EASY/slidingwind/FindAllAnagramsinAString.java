@@ -1,4 +1,4 @@
-package leetcode.array.easy;
+package leetcode.STRING.EASY.slidingwind;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,7 +15,7 @@ import java.util.List;
 //Explanation:
 //The substring with start index = 0 is "cba", which is an anagram of "abc".
 //The substring with start index = 6 is "bac", which is an anagram of "abc".
-public class FindAnagramsinAString {
+public class FindAllAnagramsinAString {
     public List<Integer> findAnagrams(String s, String p) {
         List<Integer> result = new ArrayList<>();
         if (s == null || p == null || s.length() < p.length()) {
@@ -44,5 +44,16 @@ public class FindAnagramsinAString {
         }
 
         return result;
+    }
+    public static void main(String [] args)
+    {
+        FindAllAnagramsinAString findAllAnagramsinAString=  new FindAllAnagramsinAString();
+        String s = "cbaebabacd";
+        String p = "abc";
+        List<Integer>d=findAllAnagramsinAString.findAnagrams(s,p);
+        for(int i:d){
+            System.out.print(i+ " ");
+        }
+
     }
 }

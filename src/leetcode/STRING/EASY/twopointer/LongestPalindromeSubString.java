@@ -1,4 +1,4 @@
-package leetcode.STRING.EASY;
+package leetcode.STRING.EASY.twopointer;
 //consider ABABA here consider the center A traverse
 // through left and right to find the longest palindrome
 //Is the palindrome at the current center longer than the best one we've found so far?-->if loop
