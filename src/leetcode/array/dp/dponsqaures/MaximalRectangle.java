@@ -1,7 +1,6 @@
-package leetcode.array;
+package leetcode.array.dp.dponsqaures;
 
 import java.util.Arrays;
-import java.util.Stack;
 
 public class MaximalRectangle {
     public int maximalRectangle(char[][] matrix) {
