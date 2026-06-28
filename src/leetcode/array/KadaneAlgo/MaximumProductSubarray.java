@@ -1,4 +1,4 @@
-package leetcode.array.easy;
+package leetcode.array.KadaneAlgo;
 
 public class MaximumProductSubarray {
     public int maxProduct(int[] nums) {
