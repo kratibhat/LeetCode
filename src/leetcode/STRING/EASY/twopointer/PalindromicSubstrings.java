@@ -2,7 +2,7 @@ package leetcode.STRING.EASY.twopointer;
 
 public class PalindromicSubstrings {
     public int countSubstrings(String s) {
-        if(s.length() == 0) return 0;
+        if(s.isEmpty()) return 0;
         int n = s.length();
         int res=0;
         char[] c = s.toCharArray();

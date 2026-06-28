@@ -1,4 +1,4 @@
-package leetcode.STRING.EASY;
+package leetcode.STRING.EASY.striversheet;
 
 public class FindtheIndexoftheFirstOccurrenceinaString {
     public int strStr(String haystack, String needle) {
