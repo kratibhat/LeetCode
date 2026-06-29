@@ -1,4 +1,4 @@
-package leetcode.array.dp.dponsqaures;
+package leetcode.dp.easy.dponsqaures;
 
 import java.util.Arrays;
 
