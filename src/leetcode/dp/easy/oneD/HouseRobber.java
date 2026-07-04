@@ -19,4 +19,9 @@ public class HouseRobber {
 
         return dp[n - 1];
     }
+    public static void main(String []args){
+        int []n={1,2,3,1};
+        HouseRobber hr = new HouseRobber();
+        System.out.println(hr.rob(n));
+    }
 }

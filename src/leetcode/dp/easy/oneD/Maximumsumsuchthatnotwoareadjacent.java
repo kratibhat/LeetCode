@@ -10,7 +10,7 @@ package leetcode.dp.easy.oneD;
 /// Explanation: Pick the subsequence {5, 100, 5}.
 /// The sum is 110 and no two elements are adjacent. This is the highest possible sum.
 ///
-/// Input: arr[] = {3, 2, 7, 10}
+/// Input: arr[] = {3, 2, 10}
 /// Output: 13
 /// Explanation: The subsequence is {3, 10}. This gives the highest possible sum = 13.
 ///
@@ -40,6 +40,7 @@ public class Maximumsumsuchthatnotwoareadjacent {
         int n = arr.length;
 
         if (n == 0)
+
             return 0;
         if (n == 1)
             return arr[0];
