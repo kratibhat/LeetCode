@@ -83,4 +83,42 @@ public class AggressiveCows {
        System.out.println(solution.aggressiveCows(pos1, m1));
        System.out.println(solution.aggressiveCows(arr, k));
     }
+    public int aggressiveCowsBeginnerFriendly(int[] arr, int k) {
+
+        // Step 1: Sort the stall positions
+        Arrays.sort(arr);
+
+        // Step 2: Minimum possible distance
+        int low = 1;
+
+        // Step 3: Maximum possible distance
+        int high = arr[arr.length - 1] - arr[0];
+
+        // Stores the best (maximum) valid distance found so far
+        int answer = 0;
+
+        // Binary Search on the answer
+        while (low <= high) {
+
+            int mid = low + (high - low) / 2;
+
+            // Can we place all cows with at least 'mid' distance?
+            if (canPlace(arr, k, mid)) {
+
+                // Yes, this distance is possible
+                answer = mid;
+
+                // Try to find an even larger minimum distance
+                low = mid + 1;
+
+            } else {
+
+                // Distance is too large
+                // Try smaller distances
+                high = mid - 1;
+            }
+        }
+
+        return answer;
+    }
 }
