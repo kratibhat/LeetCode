@@ -37,8 +37,8 @@ public class KthElementOfTwoSortedArrays {
     }
 
     public static void main(String[] args) {
-        int[] a = {1, 3, 5};
-        int[] b = {2, 4, 6};
+        int[] a = {2, 3, 6, 7, 9};
+        int[] b = {1, 4, 8, 10};
         KthElementOfTwoSortedArrays sol = new KthElementOfTwoSortedArrays();
         System.out.println(sol.kthElement(a, b, 1)); // 1
         System.out.println(sol.kthElement(a, b, 4)); // 4
